@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студии вокала для аренды - Нижний Новгород</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .card-icon {
+            font-size: 2.5em;
+            margin-right: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.5em;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .card-content {
+            margin-bottom: 20px;
+        }
+        
+        .info-row {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #667eea;
+            min-width: 100px;
+            margin-right: 10px;
+        }
+        
+        .info-value {
+            color: #555;
+            flex: 1;
+        }
+        
+        .links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .link-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+        
+        .link-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎤 Студии вокала для аренды</h1>
+        <p class="subtitle">Нижний Новгород, район Тверской ул., 7</p>
+        
+        <div class="cards-grid">
+            <!-- Gorky Sound -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🎵</div>
+                    <div class="card-title">Gorky Sound</div>
+                </div>
+                <div class="card-content">
+                    <div class="info-row">
+                        <span class="info-label">Что дают:</span>
+                        <span class="info-value">Репетиционные залы и студия звукозаписи. Полная комплектация: микрофоны (Shure/Sennheiser), мониторы, пульт, звукоизоляция. Можно приходить со своим педагогом или проводить свои уроки.</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Где:</span>
+                        <span class="info-value">ул. Тимирязева, 11В (5–7 минут пешком от Тверской, 7)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Цена:</span>
+                        <span class="info-value">~600–900 ₽/час (зависит от времени суток и дня недели)</span>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="https://vk.com/gorkysound" class="link-btn" target="_blank">ВКонтакте</a>
+                </div>
+            </div>
+
+            <!-- Студия Дарьи -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🎶</div>
+                    <div class="card-title">Студия Дарьи</div>
+                </div>
+                <div class="card-content">
+                    <div class="info-row">
+                        <span class="info-label">Что дают:</span>
+                        <span class="info-value">Специализированный вокальный класс (22 м²) с профессиональным вокальным трактом. Высокие потолки, идеальная акустика для уроков вокала.</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Где:</span>
+                        <span class="info-value">Центр Нижнего Новгорода (адрес уточняется при бронировании)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Цена:</span>
+                        <span class="info-value">~500–800 ₽/час (уточнять актуальный прайс)</span>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="https://vocalstudio-nn.ru/" class="link-btn" target="_blank">Сайт</a>
+                    <a href="https://vk.com/vocalstudio_nn" class="link-btn" target="_blank">ВКонтакте</a>
+                </div>
+            </div>
+
+            <!-- DELAY Studio -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🥁</div>
+                    <div class="card-title">DELAY Studio</div>
+                </div>
+                <div class="card-content">
+                    <div class="info-row">
+                        <span class="info-label">Что дают:</span>
+                        <span class="info-value">Крупный комплекс из нескольких репетиционных залов. Полная аппаратура: барабаны, комбики, микрофоны. Подходит для групповых и индивидуальных занятий.</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Где:</span>
+                        <span class="info-value">Несколько точек в центре (10–15 мин на такси от Тверской, 7)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Цена:</span>
+                        <span class="info-value">От 450 ₽/час (второй зал) до 900 ₽/час (первый зал)</span>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="https://delay-nn.ru/" class="link-btn" target="_blank">Сайт</a>
+                    <a href="https://vk.com/delay_nn" class="link-btn" target="_blank">ВКонтакте</a>
+                </div>
+            </div>
+
+            <!-- P-TONE Studio -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-icon">🎧</div>
+                    <div class="card-title">P-TONE Studio</div>
+                </div>
+                <div class="card-content">
+                    <div class="info-row">
+                        <span class="info-label">Что дают:</span>
+                        <span class="info-value">Уютная студия с топовым оборудованием. Помещение для записи и репетиций вокала. Премиальная акустика и профессиональная аппаратура.</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Где:</span>
+                        <span class="info-value">ул. Рождественская, 20А (10–12 минут пешком от Тверской, 7)</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Цена:</span>
+                        <span class="info-value">~1000–1500 ₽/час (премиум-сегмент)</span>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="https://ptone.studio/arenda-studii" class="link-btn" target="_blank">Сайт</a>
+                    <a href="https://vk.com/ptone_studio" class="link-btn" target="_blank">ВКонтакте</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>💡 Перед посещением свяжитесь со студией для уточнения наличия свободных слотов и актуальных цен</p>
+            <p>Все локации находятся в пешей доступности от Тверской ул., 7</p>
+        </div>
+    </div>
+</body>
+</html>
